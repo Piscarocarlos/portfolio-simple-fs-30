@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background-color: #F5F4F0;
+}
+
+header {
+    text-align: center;
+    padding: 70px 0;
+}
+
+header h1 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 20px
+}
+
+.container {
+    width: 950px;
+    margin: auto;
+}
+
+.img-box,
+.content-box {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.img-box img {
+    width: 100%
+}
+
+.content-box {
+    margin: 0 50px;
+}
+
+.content-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+
+.content-box p {
+    font-size: 1.4em;
+    line-height: 1.7em
+}
+
+.img-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #9BCCBB;
+    z-index: -1;
+
+}
+
+section {
+    margin: 100px 0 200px
+}
+
+.img-box:nth-child(1)::before,
+.img-box:nth-child(3)::before,
+.img-box:nth-child(5)::before {
+    transform: translate(-35px, 35px);
+}
+
+.img-box:nth-child(2)::before,
+.img-box:nth-child(4)::before {
+    transform: translate(35px, 35px);
+}
+
+.rent h3 {
+    font-size: 2.8em;
+    font-weight: normal;
+}
+
+.rent p,
+.contact-box h4 {
+    font-size: 1.4em;
+}
+
+.rent,
+.contact-box h4,
+.contact-box p {
+    text-align: center
+}
+
+.contact-box {
+    padding: 100px 0;
+    background-color: #9BCCBB;
+}
+
+.contact-box form {
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.row .form-group {
+    width: 270px;
+    display: inline-block;
+}
+
+.ml {
+    margin-left: 55px;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    border-bottom: 2px solid;
+    background-color: #9BCCBB;
+    padding: 10px;
+    font-size: 1.2em;
+    resize: none;
+}
+
+.form-group {
+    padding: 10px 0
+}
+
+form button {
+    float: right;
+    border: 2px solid;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #9BCCBB;
+    cursor: pointer;
+}
+
+form button:hover {
+    border: 2px solid rgb(82, 78, 78);
+    background-color: rgb(82, 78, 78);
+    color: #fff
+}
